@@ -1,10 +1,3 @@
-/*
- * @Author: 
- * @Date: 2020-07-21 17:09:56
- * @LastEditors: wanglijuan01
- * @LastEditTime: 2020-07-22 17:33:21
- * @Description: 
- */ 
 const inquirer = require('inquirer')
 const chalk = require('chalk')
 const {exec} = require('child_process')
@@ -103,6 +96,7 @@ module.exports = () => {
         })
         console.log(chalk.green('vue-router配置完成'))
       }else{
+        // 不配置路由时，删除views模板
         exec(`rm -rf ${answer.projectName}/src/views`)
       }
       let files = ['public/index.html','src/App.vue','src/main.js','package.json', 'README.md']
