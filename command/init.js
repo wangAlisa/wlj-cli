@@ -1,3 +1,10 @@
+/*
+ * @Author: 
+ * @Date: 2020-07-21 17:09:56
+ * @LastEditors: wanglijuan01
+ * @LastEditTime: 2020-07-22 17:33:21
+ * @Description: 
+ */ 
 const inquirer = require('inquirer')
 const chalk = require('chalk')
 const {exec} = require('child_process')
@@ -66,7 +73,7 @@ module.exports = () => {
   inquirer.prompt(prompts).then(answer => { // 通过用户的输入进行各种操作
     console.log(chalk.green('开始初始化文件\n'))
     console.log(chalk.gray('初始化中...'))
-    const gitUrl = 'https://github.com/wangAlisa/vue-temp.git'
+    const gitUrl = 'https://github.com/wangAlisa/vue-template.git'
     exec(`git clone ${gitUrl} ${answer.projectName}`, (error, stdout, stderr) => {
       console.log('模板下载完毕')
       if(error) { // 当有错误的时候打印出错误并退出操作
@@ -96,7 +103,6 @@ module.exports = () => {
         })
         console.log(chalk.green('vue-router配置完成'))
       }else{
-        // 不配置路由时，删除views模板
         exec(`rm -rf ${answer.projectName}/src/views`)
       }
       let files = ['public/index.html','src/App.vue','src/main.js','package.json', 'README.md']
