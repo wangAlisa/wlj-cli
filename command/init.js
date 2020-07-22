@@ -73,7 +73,7 @@ module.exports = () => {
   inquirer.prompt(prompts).then(answer => { // 通过用户的输入进行各种操作
     console.log(chalk.green('开始初始化文件\n'))
     console.log(chalk.gray('初始化中...'))
-    const gitUrl = 'https://github.com/wangAlisa/vue-template.git'
+    const gitUrl = 'https://github.com/wangAlisa/vue-temp.git'
     exec(`git clone ${gitUrl} ${answer.projectName}`, (error, stdout, stderr) => {
       console.log('模板下载完毕')
       if(error) { // 当有错误的时候打印出错误并退出操作
