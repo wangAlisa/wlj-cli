@@ -19,7 +19,7 @@ wlj init
 来初始化项目
 
 # help说明
-Open your terminal and type `xr` or `xr -h` , you'll see the help infomation below:
+Open your terminal and type `wlj`, you'll see the help infomation below:
 ```
   Usage: wlj <command>
 
