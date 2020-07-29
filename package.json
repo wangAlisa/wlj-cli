@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "wlj": "bin/wlj.js"
+    "wlj": "bin/wlj.js",
+    "init": "bin/init.js",
+    "add": "bin/add.js",
+    "del": "bin/del.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +16,11 @@
     "chalk": "^3.0.0",
     "child_process": "^1.0.2",
     "commander": "^4.1.1",
+    "download-git-repo": "^3.0.2",
     "ejs": "^3.0.1",
-    "inquirer": "^7.0.4"
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.0.4",
+    "ora": "^4.0.5"
   },
   "author": "",
   "license": "ISC"
