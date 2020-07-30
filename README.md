@@ -26,7 +26,7 @@ Open your terminal and type `wlj`, you'll see the help infomation below:
   Commands:
 
     add       Add a new template
-    delete    Delete a template
+    del       Delete a template
     list      List all the templates
     init      Init a based project
 
@@ -63,4 +63,7 @@ Open your terminal and type `wlj`, you'll see the help infomation below:
 增加已有模板list方便使用模板
 完善2.0.0版本功能
 敬请期待。。。
+
+## 小小故事
+我在开始写wlj-cli@1.0.0 版本的时候，考虑很多，希望设计的完美，呈现的效果也完美，可是技术、知识、时间限制，致使达不到自己的预期，当时有不想写的念头。幸运的是我当时在读一本书，提到完成好过完美，在80%的时间里表现出80分的状态就很好，这句话启发我以一种追求不完美的方式完成了一个版本，然后去慢慢的迭代优化，完成了2.0.0版本，并计划后续出3.0.0版本。
 

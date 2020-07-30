@@ -5,9 +5,10 @@
   "main": "index.js",
   "bin": {
     "wlj": "bin/wlj.js",
-    "wlj-init": "bin/init.js",
-    "wlj-add": "bin/add.js",
-    "wlj-del": "bin/del.js"
+    "wlj-init": "bin/wlj-init.js",
+    "wlj-add": "bin/wlj-add.js",
+    "wlj-del": "bin/wlj-del.js",
+    "wlj-list": "bin/wlj-list.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

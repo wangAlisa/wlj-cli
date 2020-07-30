@@ -11,7 +11,6 @@ const ora = require('ora');
 const download =require('download-git-repo');
 const tplObj = require(`${__dirname}/../temp.json`)
 module.exports = () => {
-  console.log(program.args, 'args');
   // 第一个参数是模板名称，第二个参数是项目名称
   let templateName = program.args[0];
   let projectName = program.args[1];
@@ -24,7 +23,6 @@ module.exports = () => {
     return
   }
   let url = tplObj[templateName];
-  console.log(url, '1111');
   console.log(chalk.white('\n Start generating... \n'))
   const spinner = ora('Downloading...');
   spinner.start();
