@@ -59,10 +59,16 @@ Open your terminal and type `wlj`, you'll see the help infomation below:
 增加添加模板、删除模板功能
 增加模板wlj add <模板名称><项目名称>的方式初始化项目
 
+## 3.0.0
+增加vue3.0的一个后台模版(vue3.0+ts+elementPlus实现的)
+
+## github 源码 https://github.com/wangAlisa/wlj-cli
+## npm网站发布 https://www.npmjs.com/package/wlj-cli
+
 ## 后续
-增加已有模板list方便使用模板
-完善2.0.0版本功能
 敬请期待。。。
+
+
 
 ## 小小故事
 我在开始写wlj-cli@1.0.0 版本的时候，考虑很多，希望设计的完美，呈现的效果也完美，可是技术、知识、时间限制，致使达不到自己的预期，当时有不想写的念头。幸运的是我当时在读一本书，提到完成好过完美，在80%的时间里表现出80分的状态就很好，这句话启发我以一种追求不完美的方式完成了一个版本，然后去慢慢的迭代优化，完成了2.0.0版本，并计划后续出3.0.0版本。
